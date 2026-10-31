@@ -1,0 +1,25 @@
+[V013] modes are taken from |H| (the ratio to ch1111), NOT from the raw bolometer amplitude. The raw amplitude peaks at 3.4 Hz on 46/52 bolometers, but the DRIVE force also peaks at 3.4 Hz (1521 mV vs 363 mV at 2.5 Hz), so a raw-amplitude peak there is partly the shaker, not the tower. Dividing by ch1111 on the same step removes it.
+[V013] local maxima of |H| over the 52 bolometers: 477 peaks total, 9.2 per channel
+[V013] peak frequency histogram of |H| (channels showing a local max at each grid point), most common first: 3.4 Hz x48, 4.0 Hz x47, 8.8 Hz x45, 7.4 Hz x41, 4.9 Hz x40, 8.1 Hz x40, 6.2 Hz x38, 8.5 Hz x33, 7.9 Hz x24, 5.3 Hz x24, 8.3 Hz x17, 5.4 Hz x14
+[V014] clusters of >=6 channels, merged across adjacent grid points: [3.4], [4.0], [4.8], [4.9], [5.3], [5.4], [6.2], [7.4], [7.9], [8.1+8.2], [8.3], [8.5+8.6], [8.8]
+[V015] modes.csv written: 13 modes
+[V015] mode f0=3.4605 +/- 0.0989 Hz | zeta=0.01445 (UPPER LIMIT) | span=1 pts | 52/52 channels | pt_harmonic=False | rfp zeta median=0.00232 (iqr 0.00577, n=14, median rel resid 0.645)
+[V015] mode f0=4.9070 +/- 0.0500 Hz | zeta=0.01019 (UPPER LIMIT) | span=2 pts | 52/52 channels | pt_harmonic=False | rfp zeta median=0.00131 (iqr 0.00234, n=49, median rel resid 0.792)
+[V015] mode f0=4.9033 +/- 0.0500 Hz | zeta=0.01020 (UPPER LIMIT) | span=2 pts | 51/52 channels | pt_harmonic=False | rfp zeta median=0.00164 (iqr 0.00106, n=47, median rel resid 0.861)
+[V015] mode f0=3.8259 +/- 0.0500 Hz | zeta=0.01307 (UPPER LIMIT) | span=2 pts | 47/52 channels | pt_harmonic=False | rfp zeta median=0.00017 (iqr nan, n=2, median rel resid 2.448)
+[V015] mode f0=8.3028 +/- 0.0892 Hz | zeta=0.00602 (UPPER LIMIT) | span=1 pts | 47/52 channels | pt_harmonic=False | rfp zeta median=0.00220 (iqr 0.00370, n=40, median rel resid 1.165)
+[V015] mode f0=8.4460 +/- 0.1223 Hz | zeta=0.00592 +/- 0.00592 | span=3 pts | 45/52 channels | pt_harmonic=True | rfp zeta median=0.00127 (iqr 0.00254, n=36, median rel resid 1.166)
+[V015] mode f0=8.5557 +/- 0.1113 Hz | zeta=0.00584 (UPPER LIMIT) | span=1 pts | 45/52 channels | pt_harmonic=False | rfp zeta median=0.00161 (iqr 0.00337, n=37, median rel resid 0.945)
+[V015] mode f0=7.4414 +/- 0.0500 Hz | zeta=0.00672 (UPPER LIMIT) | span=1 pts | 44/52 channels | pt_harmonic=False | rfp zeta median=0.00027 (iqr 0.00090, n=9, median rel resid 1.038)
+[V015] mode f0=4.9685 +/- 0.0721 Hz | zeta=0.00000 +/- 0.01006 | span=6 pts | 38/52 channels | pt_harmonic=False | rfp zeta median=0.00738 (iqr 0.00781, n=13, median rel resid 0.810)
+[V015] mode f0=5.0740 +/- 0.0566 Hz | zeta=0.00000 +/- 0.00985 | span=6 pts | 38/52 channels | pt_harmonic=False | rfp zeta median=0.01353 (iqr nan, n=3, median rel resid 0.726)
+[V015] mode f0=6.2204 +/- 0.0500 Hz | zeta=0.00804 (UPPER LIMIT) | span=1 pts | 38/52 channels | pt_harmonic=False | rfp zeta median=0.00700 (iqr 0.00240, n=37, median rel resid 0.296)
+[V015] mode f0=8.0513 +/- 0.1172 Hz | zeta=0.00621 (UPPER LIMIT) | span=1 pts | 28/52 channels | pt_harmonic=False | rfp zeta median=0.00089 (iqr 0.00156, n=28, median rel resid 1.113)
+[V015] mode f0=8.3799 +/- 0.1240 Hz | zeta=0.00597 +/- 0.00597 | span=5 pts | 23/52 channels | pt_harmonic=True | rfp zeta median=0.00196 (iqr 0.00400, n=14, median rel resid 1.005)
+[V016] corroboration against SPEC section 7, stated either way:
+[V016]   collaboration hunt 3.35-3.55 Hz (runs 306468/469/470, 306486, 306492, 306503): I find modes at 3.460 Hz
+[V016]   collaboration hunt 8.0-9.0 Hz (runs 306477, 306485): I find modes at 8.303 Hz, 8.446 Hz, 8.556 Hz, 8.051 Hz, 8.380 Hz
+[V016]   pulse-tube 1.4 Hz harmonics (2.8/4.2/5.6/7.0/8.4 Hz): 2 of 13 modes are flagged as coincident within f0_err: 8.446, 8.380
+[V017] median in-band coherence per bolometer: median 0.5275, range 0.0984-0.9730; the uncorrelated floor is 1/n_sub = 0.0417, so coherence is genuinely resolved on 44 of 52 channels (median coh2 > 5x floor)
+[V017] coherence vs frequency (median over bolometers), 5 worst steps: 2.8 Hz:0.031, 2.7 Hz:0.037, 7.0 Hz:0.072, 6.9 Hz:0.073, 9.4 Hz:0.083
+[V017] coherence vs frequency, 5 best steps: 3.4 Hz:0.999, 3.5 Hz:0.998, 4.9 Hz:0.997, 4.8 Hz:0.995, 3.6 Hz:0.995

@@ -1,0 +1,26 @@
+[V007] step grid from measured crossovers: step 0 run [4009.32, 4259.32), step 70 run [21509.19, 21759.19); dwells inset by 2.0 s at each end
+[V007] masked lock-in sub-blocks per step: min=24 max=24 median=24 total=1704; sub-block length 5.6 s; mask [-0.2,+4.2] s about each pulse
+[V007] samples used in the lock-in: 9542400 of 17770000 in the window = 53.7% (the rest is pulser mask, boundary insets and gap remainder)
+[V007] channels processed: 52 bolometers + 26 aux = 78. NOTE SPEC section 3 says 'all 71 bolometer-plus-aux channels'; 71 is the number of STEPS. The true channel count for the excitation window is 52 + 26 = 78 and I report all 78.
+[V007] lock-in progress: 1/78 channels (ch0937)
+[V007] lock-in progress: 14/78 channels (ch0950)
+[V007] lock-in progress: 27/78 channels (ch0963)
+[V007] lock-in progress: 40/78 channels (ch0976)
+[V007] lock-in progress: 53/78 channels (ch1018)
+[V007] lock-in progress: 66/78 channels (ch1111)
+[V007] H1 formed as sum(conj(R)*B)/sum(|R|^2) over the pulser-free sub-blocks of each step, with ch1111 as R. Standard error from the complex scatter of the per-sub-block ratios B/R, so any ch1111 range change cancels exactly.
+[V007] coherence floor for uncorrelated data is 1/n_sub = 0.0417 (median over steps); reported coh2 is RAW, coh2_bias is that 1/n floor
+[V008] quiet1: 24 pulser-free sub-blocks per frequency; in-band noise (mV rms, same lock-in estimator as the response) over the 52 bolometers: median=0.1457, min=0.0670, max=7.2677
+[V008] quiet3: 77 pulser-free sub-blocks per frequency; in-band noise (mV rms, same lock-in estimator as the response) over the 52 bolometers: median=0.1490, min=0.0753, max=7.2129
+[V008] NOTE quietrun (run RUNB, 2456 s) is NOT used for the masked noise estimate: pulser_times.npy covers run RUNA only, so I cannot mask the pulser there and the 0.1 Hz comb lands on every drive frequency. Using it unmasked would inflate the noise at exactly the frequencies that matter. Reported noise is from quiet3 (775 s, the longest in-run window with known pulse times); quiet1 is the cross-check.
+[V008] quiet1/quiet3 noise ratio over bolometers and frequencies: median=0.982 (10th-90th pct 0.814-1.154) -> the two in-run pedestals agree to this level
+[V009] ring-down: window [+0.2,+5.5] s after each of the 70 boundaries, demodulated at the OLD tone, decimated to 50 Hz; the decaying old tone and the steady new tone are fitted SIMULTANEOUSLY because they are only 0.1 Hz apart.
+[V009] LIMITATION, stated rather than papered over: the usable ring-down window is 5.3 s and the adjacent tone is 0.1 Hz away, so f_old and f_new are separated by only 0.53 of a beat cycle in that window. tau near the expected 3.2 s is therefore only weakly constrained and I do NOT use ring-down as the primary damping route.
+[V009] ring-down over bolometers x boundaries: median tau=0.30 s, median 1-sigma half-width=14.85 s -> fractional uncertainty 4950%, consistent with the limitation above
+[V010] wrote responses.npz: H, H_se, coherence2, coherence2_bias, amp_mV, amp_subblock_mV, noise, ring-down baseband segments and tau fits, 78 channels x 71 steps
+[V011] impulses.csv written: 71 rows (frequency steps, not impulses). force_rms spans 362.97-1521.58 mV, a factor 4.19 across frequency; jumps at 5.4->5.5 Hz (429.9 -> 744.9 mV, +73.3%) and 7.4->7.5 Hz (723.4 -> 490.8 mV, -32.2%) are CONFIRMED on my own dwells.
+[V012] channel_gain.csv written, all 52 bolometers, no pre-selection. peak_response (mV rms at ADC input): median=14.0178 min=0.6399 max=183.3194
+[V012] SNR at the peak frequency: median=76.14 min=5.05 max=504.19; 52 of 52 bolometers exceed SNR 3
+[V012] median in-band coherence against ch1111: median over bolometers=0.5275, min=0.0984, max=0.9730 (uncorrelated floor 0.0417)
+[V012] highest median in-band coherence: ch0939 at 0.9730. This is the criterion SPEC rule 5 fixes in advance for choosing the example channel, quoted here for reconciliation; I am not pre-selecting on it.
+[V012] peak frequency across the 52 bolometers, most common first: 3.4 Hz x46, 4.9 Hz x4, 3.5 Hz x1, 4.8 Hz x1

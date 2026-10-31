@@ -1,0 +1,346 @@
+  [env] CUORE_INSTALL = /global/common/software/<NERSC_ACCOUNT>/csoft13/soft/cuoresw
+  [env] VIBES         = <SCRATCH>/vibes_main
+  [env] CUORE_DB_HOST = <CUORE_DB_HOST>:<PORT> (user <REDACTED>, password set: yes)
+=== GetAllTriggersByTower RUNA 19 3183 (dataset 3183 per spreadsheet) ===
+WARNING:  database "qdb" has a collation version mismatch
+DETAIL:  The database was created using collation version 2.17, but the operating system provides version 2.34.
+HINT:  Rebuild all objects in this database that use the default collation and run ALTER DATABASE qdb REFRESH COLLATION VERSION, or build PostgreSQL with the right library version.
+[01;00mQGlobalReaderDispatcher:       loaded default g-reader LRootGlobalReader
+[01;00m* filename is:      <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p001.root
+* file version:     1
+* vector length is: 10000000000 ns
+* run start is:     0
+* run stop (from last partial) is:  1750000000000 ns
+* filename is:      <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+* file version:     1
+* vector length is: 10000000000 ns
+* run start is:     0
+* run stop (from last partial) is:  48818000000000 ns
+Run stop time in seconds is: 48818
+* filename is:      <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C4_p001.root
+* file version:     1
+* vector length is: 10000000000 ns
+* run start is:     0
+* run stop (from last partial) is:  1860000000000 ns
+* filename is:      <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C4_p027.root
+* file version:     1
+* vector length is: 10000000000 ns
+* run start is:     0
+* run stop (from last partial) is:  48818000000000 ns
+Run stop time in seconds is: 48818
+Getting triggers for ch : 937
+For ch 937 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 937 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 937
+Getting triggers for ch : 938
+For ch 938 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 938 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 938
+Getting triggers for ch : 939
+For ch 939 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 939 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 939
+Getting triggers for ch : 940
+For ch 940 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 940 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 940
+Getting triggers for ch : 941
+For ch 941 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 941 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 941
+Getting triggers for ch : 942
+For ch 942 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 942 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 942
+Getting triggers for ch : 943
+For ch 943 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 943 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 943
+Getting triggers for ch : 944
+For ch 944 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 944 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 944
+Getting triggers for ch : 945
+For ch 945 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 945 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 945
+Getting triggers for ch : 946
+For ch 946 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 946 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 946
+Getting triggers for ch : 947
+For ch 947 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 947 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 947
+Getting triggers for ch : 948
+For ch 948 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 948 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 948
+Getting triggers for ch : 949
+For ch 949 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 949 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 949
+Getting triggers for ch : 950
+For ch 950 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 950 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 950
+Getting triggers for ch : 951
+For ch 951 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 1 inserting 1 triggers...starting with 30959913000000
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 951 we found 1 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 951
+Getting triggers for ch : 952
+For ch 952 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 952 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 952
+Getting triggers for ch : 953
+For ch 953 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 953 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 953
+Getting triggers for ch : 954
+For ch 954 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 954 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 954
+Getting triggers for ch : 955
+For ch 955 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 955 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 955
+Getting triggers for ch : 956
+For ch 956 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 956 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 956
+Getting triggers for ch : 957
+For ch 957 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 957 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 957
+Getting triggers for ch : 958
+For ch 958 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 958 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 958
+Getting triggers for ch : 959
+For ch 959 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 959 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 959
+Getting triggers for ch : 960
+For ch 960 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 960 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 960
+Getting triggers for ch : 961
+For ch 961 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 961 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 961
+Getting triggers for ch : 962
+For ch 962 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 962 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 962
+Getting triggers for ch : 963
+For ch 963 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 1 inserting 1 triggers...starting with 30959916000000
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 963 we found 1 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 963
+Getting triggers for ch : 964
+For ch 964 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 964 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 964
+Getting triggers for ch : 965
+For ch 965 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 965 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 965
+Getting triggers for ch : 966
+For ch 966 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 966 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 966
+Getting triggers for ch : 967
+For ch 967 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 967 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 967
+Getting triggers for ch : 968
+For ch 968 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 968 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 968
+Getting triggers for ch : 969
+For ch 969 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 969 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 969
+Getting triggers for ch : 970
+For ch 970 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 970 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 970
+Getting triggers for ch : 971
+For ch 971 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 971 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 971
+Getting triggers for ch : 972
+For ch 972 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 972 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 972
+Getting triggers for ch : 973
+For ch 973 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 973 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 973
+Getting triggers for ch : 974
+For ch 974 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 974 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 974
+Getting triggers for ch : 975
+For ch 975 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 975 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 975
+Getting triggers for ch : 976
+For ch 976 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 976 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 976
+Getting triggers for ch : 977
+For ch 977 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 977 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 977
+Getting triggers for ch : 978
+For ch 978 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 978 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 978
+Getting triggers for ch : 979
+For ch 979 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 979 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 979
+Getting triggers for ch : 980
+For ch 980 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 980 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 980
+Getting triggers for ch : 981
+For ch 981 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 981 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 981
+Getting triggers for ch : 982
+For ch 982 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 982 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 982
+Getting triggers for ch : 983
+For ch 983 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 983 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 983
+Getting triggers for ch : 984
+For ch 984 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 984 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 984
+Getting triggers for ch : 985
+For ch 985 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 985 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 985
+Getting triggers for ch : 986
+For ch 986 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 986 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 986
+Getting triggers for ch : 987
+For ch 987 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 987 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 987
+Getting triggers for ch : 988
+For ch 988 opening (partial 29): <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+For flag 2 inserting 4882 triggers...starting with 5002000000
+For channel 988 we found 0 triggers.
+[01;32mQBadChannelsHandle:            Legacy code, useless dataset information stored. Please move to QBadIntervalsHandle.
+[01;00mFound 0 bad intervals for channel 988
+Finished tower 19
+EXIT=0

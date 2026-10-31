@@ -1,0 +1,18 @@
+=== excitation: run RUNA, t=[3990,21760] s, 17,770,000 samples/ch
+    52 bolometers done
+    26 aux done
+=== quiet1: run RUNA, t=[0,250] s, 250,000 samples/ch
+    52 bolometers done
+    26 aux done
+=== quiet2: run RUNA, t=[1275,1500] s, 225,000 samples/ch
+    52 bolometers done
+    26 aux done
+=== quiet3: run RUNA, t=[48025,48800] s, 775,000 samples/ch
+    52 bolometers done
+    26 aux done
+=== quietrun: run RUNB, t=[0,2456] s, 2,456,000 samples/ch
+    52 bolometers done
+    23 aux done
+
+wrote data/meta.json (72906 bytes)
+EXIT=0

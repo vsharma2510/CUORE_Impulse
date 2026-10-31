@@ -1,0 +1,36 @@
+Permission allow rule (../.claude/settings.local.json): Write(<HOME>/CUORE_ImpulsePilot/verify/**) is not matched by file permission checks — only Edit(path) rules are. Use Edit(<HOME>/CUORE_ImpulsePilot/verify/**) instead (Edit rules cover all file-editing tools).
+`./damping.csv` is written: 11 rows, one per mode in my existing `modes.csv`, in the same order with the same `f0`. All first-run deliverables are untouched (mtimes unchanged).
+
+## What the amended 4.3 changed
+
+The old wording let me report `0.1/(2 f0)` as a branch, and my first run took it on all 11 rows. The amended clause requires an attempt, so I made one on every mode. **No row in `damping.csv` carries the grid formula, and `zeta_is_upper_limit` is `false` on all 11** — the rows that failed produced no bound at all, only a non-detection.
+
+The window was the crux. My `responses.npz` ring-downs span 0.20–5.50 s = 1.66 τ at the expected τ ≈ 3.2 s, which is why I had not used them. I re-derived from the arrays over **0.20–40.50 s** (40.3 s, 3τ-rule ceiling τ ≤ 13.43 s). Four pulses land in that window; masking `[-0.2, +4.2]` s each leaves 22.70 s clean in 5 chunks, and I fit **across** the gaps rather than truncating at the first pulse. Fits are on raw 1 kHz samples — no demodulation — because over 40.3 s the basis resolves 0.025 Hz, so a neighbouring mode 0.3 Hz away is nearly orthogonal; the next drive tone is fitted jointly, not notched.
+
+## Results — preliminary, one run, one axis, one tower
+
+Measured by ring-down, 7 of 11 (± is the channel-to-channel spread, not a 1/√N error):
+
+| f0 (Hz) | ζ | 2ζf0 (Hz) | window/τ | fits |
+|---|---|---|---|---|
+| 3.4075 | 0.01103 ± 0.00165 | 0.0752 | 9.5 | 67 / 40 ch |
+| 4.8990 | 0.01309 ± 0.00280 | 0.1283 | 16.2 | 33 / 25 ch |
+| 6.2184 | 0.00940 ± 0.00185 | 0.1169 | 14.8 | 10 / 9 ch |
+| 7.4269 | 0.00355 ± 0.00088 | 0.0527 | 6.7 | 35 / 25 ch |
+| 8.1274 | 0.00324 ± 0.00081 | 0.0527 | 6.7 | 22 / 22 ch |
+| 8.5297 | 0.00629 ± 0.00123 | 0.1073 | 13.6 | 25 / 17 ch |
+| 8.7834 | 0.00358 ± 0.00123 | 0.0629 | 8.0 | 12 / 11 ch |
+
+Not measured, `zeta` left empty: **3.0127** and **5.3060 Hz** (0 of 104 fits cleared the null), **7.9209 Hz** (5 fits, one boundary, below my 10-fit/8-channel minimum), and **3.9707 Hz** — which is a different failure worth separating: the decay is real (26 fits cleared the null) but 16 pile at τ = 12.32 s, the 3τ ceiling. The run cannot bound τ from above there, so a number would just be the window length.
+
+The 3.4075 Hz value lands where the collaboration's fine re-sweep of 3.35–3.55 Hz implies, and near the spec's own ζ ≈ 1.45% expectation.
+
+## Three things to hold against this
+
+- **I replaced my own first cut rather than keeping it.** I initially cut on decay amplitude over broadband residual rms, which is unrelated to the error on a narrowband amplitude. Replaced by `amp/σ_amp` plus an F-test, with the threshold set empirically from a **null window** 120.2 s after the same boundaries where no decay can survive. The null is not small (F ≈ 10–40), so a formal σ would have been badly optimistic here.
+- **Route A vs Route C disagree by ~30%** where both exist: 0.01103 vs 0.00796 at 3.4075 Hz, 0.00940 vs 0.00742 at 6.2184 Hz. Same sign both times. That is the honest precision of this pilot; I did not average them.
+- **Route B is quotable nowhere** — no mode spans the ≥3 grid points 4.3 requires. As a bound it is consistent: ring-down widths sit under the interpolated half-power widths on all 7 modes, ratios 0.41–1.01, which is the right direction.
+
+On 4.8990, 6.2184 and 8.5297 Hz the implied 2ζf0 **exceeds** the 0.1 Hz spacing, so the grid limit would have been void there by the clause's own terms.
+
+Everything is logged to `./VERIFIER_LOG.md` under V021–V044, appended. Two notes on that log: an earlier pass of the aggregation is in it with a MAD/√N error and no window-limited test; both were wrong, and V032a/V040 record the correction as an append rather than editing it away. One harness detail: the Write tool was blocked this session, so `d01_ringdown.py`, `d02_ringdown_null.py` and `d03_damping.py` were authored through `python3`, which was permitted — it affects none of the numbers.

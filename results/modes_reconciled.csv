@@ -1,0 +1,16 @@
+f0_hz,f0_err_hz,status,found_by,f0_analyst_hz,f0_verifier_hz,separation_hz,zeta,zeta_err,zeta_upper_limit,n_channels_peak_analyst,n_channels_peak_verifier,dist_to_pt_harmonic_hz,pt_harmonic_flag,note
+3.0210,0.050,headline,both,3.0210,3.0127,-0.0083,0.0146,0.0016,0.01660,33,30,0.2321,false,n_channels_showing differs by method (11 vs 34); not comparable
+3.4200,0.050,headline,both,3.4200,3.4075,-0.0125,,,0.0090,47,47,0.6311,false,strongest mode: peak response for 42 (A) and 46 (V) of 52 channels; inside the collaboration's 3.35-3.55 Hz hunt
+3.9620,0.050,headline,both,3.9620,3.9707,+0.0087,0.0064,0.0007,0.01259,48,46,0.2213,false,
+4.8860,0.066,headline,both,4.8860,4.8990,+0.0130,0.0108,0.0016,0.01021,40,40,0.6917,false,
+5.3490,0.050,headline,both,5.3490,5.3060,-0.0430,0.0131,0.0006,0.00942,16,14,0.2287,false,"zeta 0.0131 +- 0.0006 implies a half-power width of 0.140 Hz, wider than the 0.1 Hz drive grid, so the verifier's upper limit is void here"
+6.2184,0.050,headline,verifier,,6.2184,,,,0.00804,44,40,0.6407,false,the analyst's ERA missed it: a significant local |H| maximum sits here on 44 of 52 channels in the ANALYST's own transfer functions (E042)
+7.9209,0.050,headline,verifier,,7.9209,,,,0.00631,32,30,0.4457,false,as 6.2184 Hz: present on 32 of 52 channels in the analyst's own H (E042)
+8.0990,0.050,headline,both,8.0990,8.1274,+0.0284,0.0034,0.0006,0.00615,37,35,0.2676,false,"the 8.099/8.172 split is 0.073 Hz, below the 0.1 Hz drive grid, so median-|H| peak-picking cannot separate the pair by construction while ERA can"
+8.1720,0.050,headline,analyst,8.1720,8.1274,-0.0446,0.0048,0.0010,0.00615,4,4,0.1946,false,second pole of the pair above; inside the collaboration's 8.0-9.0 Hz hunt
+8.5297,0.050,headline,verifier,,8.5297,,,,0.00586,25,25,0.1631,false,as 6.2184 Hz: present on 25 of 52 channels in the analyst's own H (E042)
+8.7940,0.050,headline,both,8.7940,8.7834,-0.0106,0.0038,0.0001,0.00569,45,43,0.4274,false,inside the collaboration's 8.0-9.0 Hz hunt
+7.4640,0.050,tentative,both,7.4640,7.4269,-0.0371,0.0020,0.0001,0.00673,4,3,0.4919,false,"DEMOTED despite cross-method agreement at 0.037 Hz: sits on the 7.45 Hz boundary, where ch1111 and ch1112 off-tone noise jump x1.82 and x1.67 (a gain change) AND their tone/off-tone ratios move x0.37 and x1.86 in opposite directions (a real drive-point resonance). The two drive monitors disagree by a factor 5 about the drive, and per-channel support is 4 of 52, the weakest of any agreed mode (E043)"
+8.2850,0.050,tentative,analyst,8.2850,,,0.0112,0.0004,,10,7,0.0816,false,"a local |H| maximum on only 10 of 52 channels in the analyst's own H and 7 of 52 in the verifier's; median |H| is a shoulder, not a peak (E041)"
+5.4940,0.050,withdrawn,analyst,5.4940,,,0.0097,0.0007,,0,0,0.0837,false,"no local |H| maximum on ANY of the 52 channels in either node's data; median |H| falls monotonically through it. It is the ch1111 gain step: off-tone noise x1.836 tracks the tone x1.729 while the independent accelerometer ch1112 is flat (E036, E041)"
+2.5270,0.050,withdrawn,analyst,2.5270,,,0.0030,0.0014,,,,0.2619,false,"one channel only (ch962, the noisiest of the four sampled, 39.8 mV peak excursions against 7.6-19.7) and on the first grid point, 2.50 Hz, where no local maximum is definable (E041)"

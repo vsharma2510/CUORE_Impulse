@@ -1,0 +1,17 @@
+  [env] CUORE_INSTALL = /global/common/software/<NERSC_ACCOUNT>/csoft13/soft/cuoresw
+  [env] VIBES         = <SCRATCH>/vibes_main
+  [env] CUORE_DB_HOST = <CUORE_DB_HOST>:<PORT> (user <REDACTED>, password set: yes)
+=== run RUNA  t=[3990, 21760] s  52 channels  --  excitation 2.52-9.52 Hz, 71 drive steps
+=== run RUNA  t=[0, 250] s  52 channels  --  quiet in-run segment 1
+=== run RUNA  t=[1275, 1500] s  52 channels  --  quiet in-run segment 2 (the 225 s shaker dropout)
+=== run RUNA  t=[48025, 48800] s  52 channels  --  quiet in-run segment 3
+=== run RUNB  t=[0, 2456] s  52 channels  --  quiet reference run, 40.9 min, sb540 pedestal
+=== run RUNB  t=[0, 2456] s  23 channels  --  quiet reference run, aux channels
+
+channel-extractions issued: 283
+=== failures, if any ===
+none
+=== files written ===
+runRUNA : 209 files, 3.7G
+runRUNB : 76 files, 672M
+DRIVER EXIT=0

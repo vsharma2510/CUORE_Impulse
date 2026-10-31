@@ -1,0 +1,13 @@
+WARNING:  database "qdb" has a collation version mismatch
+DETAIL:  The database was created using collation version 2.17, but the operating system provides version 2.34.
+HINT:  Rebuild all objects in this database that use the default collation and run ALTER DATABASE qdb REFRESH COLLATION VERSION, or build PostgreSQL with the right library version.
+[01;00mQGlobalReaderDispatcher:       loaded default g-reader LRootGlobalReader
+[01;00m* filename is:      <CUORE_RAW_DATA_ROOT>/runRUNA/QRaw_RDCF_RUNA_T_C6_p029.root
+* file version:     1
+* vector length is: 10000000000 ns
+* run start is:     0
+* run stop (from last partial) is:  48818000000000 ns
+Saved run RUNA channel 957 (775000 samples) -> <SCRATCH>/vibes_main/output/runRUNA/timestreams/runRUNA_ch0957_t48025_T48800.bin
+Saved run RUNA channel 958 (775000 samples) -> <SCRATCH>/vibes_main/output/runRUNA/timestreams/runRUNA_ch0958_t48025_T48800.bin
+Saved run RUNA channel 959 (775000 samples) -> <SCRATCH>/vibes_main/output/runRUNA/timestreams/runRUNA_ch0959_t48025_T48800.bin
+Saved run RUNA channel 960 (775000 samples) -> <SCRATCH>/vibes_main/output/runRUNA/timestreams/runRUNA_ch0960_t48025_T48800.bin

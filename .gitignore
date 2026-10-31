@@ -1,0 +1,28 @@
+# CUORE data and extracted arrays are never committed
+data/
+*.npy
+*.npz
+*.root
+# Raw session recordings stay out: they are long, unreviewed, and superseded by the cuts.
+# The CUT segments ARE committed. They were re-swept before the public push: a prior pass had
+# missed that the home-directory username was still visible in two of them; that's now scrubbed
+# along with every other path/host/account token project-wide. Anchored with a leading slash so
+# it does not also catch handoff/recordings.
+/recordings/*
+!/recordings/cut/
+/recordings/cut/*
+!/recordings/cut/*.cast
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Local Claude Code permission config: real absolute paths on this machine, not for sharing.
+.claude/settings.local.json
+verify/.claude/settings.local.json
+
+# Download artifacts: snapshots of content that is already tracked, so committing them would
+# only create a second copy that goes stale the moment handoff/ changes. Rebuild on demand:
+#   zip -r CUORE_pilot_handoff.zip handoff/
+*.zip
+*.tar.gz
+*.tgz

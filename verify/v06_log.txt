@@ -1,0 +1,17 @@
+[V018] modes come from |H| = |lockin(bolo)/lockin(ch1111)| on the SAME step, not from the raw bolometer amplitude: the raw amplitude peaks at 3.4 Hz on 46/52 bolometers but the drive force also peaks at 3.4 Hz (1521.6 vs 363.0 mV at 2.5 Hz), so a raw peak there is partly the shaker/stinger response.
+[V018] mode detection on the median |H| over 52 bolometers: local maxima with prominence >= 1.25 against the mean of the two neighbours AND median coherence >= 0.50 at the peak. 11 candidates: 3.0 Hz (prom 2.15, coh 0.561), 3.4 Hz (prom 3.32, coh 0.999), 4.0 Hz (prom 1.97, coh 0.980), 4.9 Hz (prom 1.50, coh 0.997), 5.3 Hz (prom 1.26, coh 0.847), 6.2 Hz (prom 2.02, coh 0.902), 7.4 Hz (prom 2.15, coh 0.929), 7.9 Hz (prom 1.80, coh 0.811), 8.1 Hz (prom 2.21, coh 0.969), 8.5 Hz (prom 1.34, coh 0.951), 8.8 Hz (prom 2.58, coh 0.926)
+[V019] modes.csv written: 11 modes, 2.50-9.50 Hz
+[V019] f0=3.0127 +/- 0.0500 Hz | zeta < 0.01660 | span=1 pt | prom=2.15 | coh=0.561 | 34/52 channels | pt_harm=False | rfp zeta med=nan (n=0)
+[V019] f0=3.4075 +/- 0.0500 Hz | zeta < 0.01467 | span=1 pt | prom=3.32 | coh=0.999 | 52/52 channels | pt_harm=False | rfp zeta med=0.00796 (n=5)
+[V019] f0=3.9707 +/- 0.0500 Hz | zeta < 0.01259 | span=2 pt | prom=1.97 | coh=0.980 | 48/52 channels | pt_harm=False | rfp zeta med=nan (n=1)
+[V019] f0=4.8990 +/- 0.0500 Hz | zeta < 0.01021 | span=1 pt | prom=1.50 | coh=0.997 | 52/52 channels | pt_harm=False | rfp zeta med=nan (n=4)
+[V019] f0=5.3060 +/- 0.0500 Hz | zeta < 0.00942 | span=3 pt | prom=1.26 | coh=0.847 | 35/52 channels | pt_harm=False | rfp zeta med=nan (n=0)
+[V019] f0=6.2184 +/- 0.0500 Hz | zeta < 0.00804 | span=1 pt | prom=2.02 | coh=0.902 | 46/52 channels | pt_harm=False | rfp zeta med=0.00742 (n=29)
+[V019] f0=7.4269 +/- 0.0500 Hz | zeta < 0.00673 | span=1 pt | prom=2.15 | coh=0.929 | 49/52 channels | pt_harm=False | rfp zeta med=nan (n=0)  [FORCE-JUMP ADJACENT]
+[V019] f0=7.9209 +/- 0.0500 Hz | zeta < 0.00631 | span=1 pt | prom=1.80 | coh=0.811 | 36/52 channels | pt_harm=False | rfp zeta med=nan (n=1)
+[V019] f0=8.1274 +/- 0.0500 Hz | zeta < 0.00615 | span=1 pt | prom=2.21 | coh=0.969 | 47/52 channels | pt_harm=False | rfp zeta med=nan (n=3)
+[V019] f0=8.5297 +/- 0.0500 Hz | zeta < 0.00586 | span=2 pt | prom=1.34 | coh=0.951 | 46/52 channels | pt_harm=False | rfp zeta med=nan (n=1)
+[V019] f0=8.7834 +/- 0.0500 Hz | zeta < 0.00569 | span=1 pt | prom=2.58 | coh=0.926 | 48/52 channels | pt_harm=False | rfp zeta med=nan (n=4)
+[V019] 11 of 11 modes give only a zeta UPPER LIMIT because the peak spans < 3 of the 0.1 Hz grid points. This is exactly the case SPEC 4.3 anticipated; a point value for those would be fabricated. The 0.1 Hz step spacing, not the statistics, is the limit.
+[V019] SPEC 7 corroboration, stated either way: collaboration hunt 3.35-3.55 Hz -> I find f0 = 3.408 Hz; hunt 8.0-9.0 Hz -> I find f0 = 8.127 Hz, 8.530 Hz, 8.783 Hz
+[V019] pulse-tube 1.4 Hz harmonics (2.8/4.2/5.6/7.0/8.4 Hz): 0 of 11 modes flagged coincident within f0_err: none

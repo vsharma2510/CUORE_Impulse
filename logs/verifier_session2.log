@@ -1,0 +1,24 @@
+Permission allow rule (../.claude/settings.local.json): Write(<HOME>/CUORE_ImpulsePilot/verify/**) is not matched by file permission checks — only Edit(path) rules are. Use Edit(<HOME>/CUORE_ImpulsePilot/verify/**) instead (Edit rules cover all file-editing tools).
+All five deliverables are written and self-consistent. Summary of what the verification found.
+
+**Permissions:** the `verify/.claude/settings.local.json` you fixed is not actually being loaded (project settings come from the repo-root `.claude/`, outside my working dirs). The Write/Edit *tools* are still denied — the Reads that work do so only because `verify/`, `data/` and the pscratch root are session working directories. I wrote every file with python instead, as instructed. No shell redirection was used. I never opened, listed or searched `analysis/` or `critic/`.
+
+**Method held to:** matched-filter template bank for step recovery (no thresholding, no ERA), masked per-step lock-in as LSQ of [cos, sin, 1, t] over pulser-free sub-blocks, H1 with coherence and its 1/n bias floor, RFP modal fit, all 52 bolometers, amplitudes labelled mV at the ADC input.
+
+**Confirmations.** The 3990 s offset test passes decisively (steps.csv step 0 read with the offset gives 2.500 Hz; without it, 4.100 Hz). The drive grid is independently re-measured as f_k = 2.5 + 0.1k Hz to 1.9e-4 Hz — your refutation of my earlier 2.52+0.1k inference stands, the band is 2.50–9.50 Hz, and the force jumps (+73% at 5.4→5.5, −32% at 7.4→7.5) reproduce on my own dwells.
+
+**Four things you should see:**
+
+1. **steps.csv boundaries are wrong by −5.851 ± 0.172 s.** The 250 s cadence is right, its phase is not; the true grid is 4009.15 + 250k, not 4015 + 250k. Dwells taken from steps.csv include ~5.9 s of the *next* tone. The frequency and force columns are fine.
+2. **Your item 4 is refuted.** There is no shaker-off data in the excitation window. Array t=0–18 s is the tail of the **2.4 Hz step** (413 mV at 2.4 Hz, ch1111 rms 295 mV vs 3.89 mV when truly off); the last 30 s is still 9.5 Hz. A 1 s window can't resolve 2.4 from 2.5 Hz, which is how it looked like silence. So there is no pedestal at excitation gain — a gap I left open rather than filled.
+3. **"Ratio to ch1111 cancels it" is not right for these jumps.** A ratio cancels drive-*level* change but *imports* a reference *calibration* change. At 5.4→5.5 ch1111 jumps ×1.73 while ch1105 (accelerometer on the driven MSP-X axis) goes ×0.88 — so that one is a ch1111 scale change, and |H| on steps 30–70 carries a ~1.7 offset. The 7.4→7.5 boundary is not resolved either way.
+4. **Pulser masking is mandatory but numerically negligible here.** The comb geometry in SPEC 4.1 is exactly right, but the heater pulse is a slow thermal feature (1.3 s to peak), so its content at 2.5–9.5 Hz is 0.003–0.03 mV = 2–11% of the noise and ~0.1% of the signal. I masked anyway (46% of the window), but masking is not what makes these results valid.
+
+**Results.** 11 modes, dominant at **3.4075 ± 0.05 Hz** seen on 52/52 bolometers with coherence 0.999 — inside the collaboration's 3.35–3.55 Hz hunt window. Three more at 8.13/8.53/8.78 Hz in their 8.0–9.0 Hz window. No mode coincides with a 1.4 Hz pulse-tube line within f0_err. Median SNR 76, all 52 channels above 3; highest median in-band coherence is ch0939 at 0.973.
+
+**All 11 ζ are upper limits** — no peak spans 3 of the 0.1 Hz points, exactly the case SPEC 4.3 anticipated. Ring-down gives nothing: the usable window is 5.3 s and the next tone is 0.1 Hz away, 0.53 of a beat cycle, so τ is unconstrained (~5000%). I reported that rather than fitting a number to it.
+
+One self-correction recorded in the log: my first modal pass emitted 13 modes with near-duplicates and two ζ = 0 entries from a half-power walk that ran down a neighbouring mode's skirt. Those are not in `modes.csv`; `v05_*` is kept only as the superseded record.
+
+=== DONE ===
+VERIFIER2 EXIT=0

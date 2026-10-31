@@ -1,0 +1,84 @@
+[V002] pulser_times.npy: n=4882 first=5.0020 s last=48815.0020 s median spacing=10.000000 s max|spacing-10|=4.547e-13 s
+[V002] pulser pulses inside excitation window [3990,21760) run s: 1777 (meta.json says 1777)
+[V002] TEST array length: n=17770000 expected=17770000 -> PASS
+[V002] TEST 3990 s offset: steps.csv step 0 is RUN 4015-4265 s nominal 2.5 Hz. ARRAY slice WITH offset (t=25-275 s): f=2.500323 Hz amp=603.0 mV. WITHOUT offset (t=4015-4265 s): f=4.099983 Hz amp=1486.7 mV -> PASS
+[V002] NOTE 3990/10 = 399.0 exactly, so the offset is an integer number of pulser periods: an offset blunder is INVISIBLE to pulser alignment. Masking is insensitive to it; step indexing is not. Do not validate the offset with the pulser.
+[V002] ch1111 shaker-off rms on quiet1 = 3.8937 mV; filter-bank silence guard set to 20x that = 77.874 mV (rejects shaker-off blocks only; boundaries come from template competition, not from this number)
+[V003] pulser pulse shape on quiet3 (shaker off, no drive), ch0937, 76 pulses: peak=1.7915 mV at tau=+1.321 s; pre-pulse rms of the mean=0.22872 mV; typical sem=1.55619 mV; settle to 3 sigma at tau=1.37 s
+[V003] pulser mean amplitude vs tau (mV): +0.5s=-0.1237, +1s=0.4360, +2s=0.7311, +3s=0.6668, +4s=0.1303, +5s=-0.1184, +6s=-0.2808, +8s=0.0175
+[V003] matched-filter bank: templates 2.3-9.7 Hz on the 0.1 Hz grid (75), 10 s coherent window, 1 s hop; 71 contiguous single-template runs found
+[V003] step  0 f_nom=2.50 f_fit=2.500060 d=+0.000060 run=[4004.0,4263.0] amp1111=600.23 rms1111=363.01 mV
+[V003] step  1 f_nom=2.60 f_fit=2.600045 d=+0.000045 run=[4254.0,4513.0] amp1111=683.61 rms1111=445.33 mV
+[V003] step  2 f_nom=2.70 f_fit=2.700048 d=+0.000048 run=[4504.0,4763.0] amp1111=831.75 rms1111=545.97 mV
+[V003] step  3 f_nom=2.80 f_fit=2.800045 d=+0.000045 run=[4754.0,5013.0] amp1111=1014.09 rms1111=669.88 mV
+[V003] step  4 f_nom=2.90 f_fit=2.900043 d=+0.000043 run=[5004.0,5263.0] amp1111=1231.30 rms1111=818.78 mV
+[V003] step  5 f_nom=3.00 f_fit=3.000059 d=+0.000059 run=[5254.0,5514.0] amp1111=1485.21 rms1111=993.67 mV
+[V003] step  6 f_nom=3.10 f_fit=3.100050 d=+0.000050 run=[5505.0,5763.0] amp1111=1755.17 rms1111=1180.49 mV
+[V003] step  7 f_nom=3.20 f_fit=3.200052 d=+0.000052 run=[5754.0,6014.0] amp1111=1999.48 rms1111=1352.03 mV
+[V003] step  8 f_nom=3.30 f_fit=3.300068 d=+0.000068 run=[6005.0,6264.0] amp1111=2171.42 rms1111=1475.88 mV
+[V003] step  9 f_nom=3.40 f_fit=3.400071 d=+0.000071 run=[6255.0,6514.0] amp1111=2226.86 rms1111=1521.24 mV
+[V003] step 10 f_nom=3.50 f_fit=3.500061 d=+0.000061 run=[6505.0,6763.0] amp1111=2178.89 rms1111=1495.65 mV
+[V003] step 11 f_nom=3.60 f_fit=3.600052 d=+0.000052 run=[6754.0,7014.0] amp1111=2069.10 rms1111=1426.82 mV
+[V003] step 12 f_nom=3.70 f_fit=3.700070 d=+0.000070 run=[7005.0,7264.0] amp1111=1935.10 rms1111=1340.38 mV
+[V003] step 13 f_nom=3.80 f_fit=3.800070 d=+0.000070 run=[7255.0,7514.0] amp1111=1803.76 rms1111=1254.67 mV
+[V003] step 14 f_nom=3.90 f_fit=3.900075 d=+0.000075 run=[7505.0,7764.0] amp1111=1684.62 rms1111=1176.19 mV
+[V003] step 15 f_nom=4.00 f_fit=4.000080 d=+0.000080 run=[7755.0,8014.0] amp1111=1577.59 rms1111=1105.28 mV
+[V003] step 16 f_nom=4.10 f_fit=4.100069 d=+0.000069 run=[8005.0,8263.0] amp1111=1484.94 rms1111=1043.39 mV
+[V003] step 17 f_nom=4.20 f_fit=4.200058 d=+0.000058 run=[8254.0,8513.0] amp1111=1402.55 rms1111=988.22 mV
+[V003] step 18 f_nom=4.30 f_fit=4.300059 d=+0.000059 run=[8504.0,8763.0] amp1111=1331.23 rms1111=940.15 mV
+[V003] step 19 f_nom=4.40 f_fit=4.400069 d=+0.000069 run=[8754.0,9014.0] amp1111=1267.28 rms1111=896.68 mV
+[V003] step 20 f_nom=4.50 f_fit=4.500085 d=+0.000085 run=[9005.0,9264.0] amp1111=1209.96 rms1111=857.55 mV
+[V003] step 21 f_nom=4.60 f_fit=4.600085 d=+0.000085 run=[9255.0,9514.0] amp1111=1157.01 rms1111=821.18 mV
+[V003] step 22 f_nom=4.70 f_fit=4.700085 d=+0.000085 run=[9505.0,9764.0] amp1111=1109.75 rms1111=788.27 mV
+[V003] step 23 f_nom=4.80 f_fit=4.800079 d=+0.000079 run=[9755.0,10013.0] amp1111=1062.99 rms1111=755.72 mV
+[V003] step 24 f_nom=4.90 f_fit=4.900076 d=+0.000076 run=[10004.0,10264.0] amp1111=1017.84 rms1111=723.95 mV
+[V003] step 25 f_nom=5.00 f_fit=5.000092 d=+0.000092 run=[10255.0,10514.0] amp1111=969.41 rms1111=689.66 mV
+[V003] step 26 f_nom=5.10 f_fit=5.100084 d=+0.000084 run=[10505.0,10763.0] amp1111=914.84 rms1111=650.90 mV
+[V003] step 27 f_nom=5.20 f_fit=5.200075 d=+0.000075 run=[10754.0,11014.0] amp1111=840.42 rms1111=597.93 mV
+[V003] step 28 f_nom=5.30 f_fit=5.300092 d=+0.000092 run=[11005.0,11263.0] amp1111=680.63 rms1111=484.40 mV
+[V003] step 29 f_nom=5.40 f_fit=5.400134 d=+0.000134 run=[11254.0,11513.0] amp1111=604.23 rms1111=430.45 mV
+[V003] step 30 f_nom=5.50 f_fit=5.500098 d=+0.000098 run=[11504.0,11764.0] amp1111=1044.15 rms1111=742.20 mV
+[V003] step 31 f_nom=5.60 f_fit=5.600102 d=+0.000102 run=[11755.0,12014.0] amp1111=1197.61 rms1111=849.10 mV
+[V003] step 32 f_nom=5.70 f_fit=5.700104 d=+0.000104 run=[12005.0,12264.0] amp1111=1222.75 rms1111=866.17 mV
+[V003] step 33 f_nom=5.80 f_fit=5.800108 d=+0.000108 run=[12255.0,12514.0] amp1111=1202.78 rms1111=851.18 mV
+[V003] step 34 f_nom=5.90 f_fit=5.900107 d=+0.000107 run=[12505.0,12764.0] amp1111=1166.07 rms1111=824.70 mV
+[V003] step 35 f_nom=6.00 f_fit=6.000111 d=+0.000111 run=[12755.0,13014.0] amp1111=1128.24 rms1111=797.31 mV
+[V003] step 36 f_nom=6.10 f_fit=6.100114 d=+0.000114 run=[13005.0,13264.0] amp1111=1094.30 rms1111=772.85 mV
+[V003] step 37 f_nom=6.20 f_fit=6.200113 d=+0.000113 run=[13255.0,13514.0] amp1111=1067.06 rms1111=753.09 mV
+[V003] step 38 f_nom=6.30 f_fit=6.300117 d=+0.000117 run=[13505.0,13764.0] amp1111=1042.96 rms1111=735.66 mV
+[V003] step 39 f_nom=6.40 f_fit=6.400119 d=+0.000119 run=[13755.0,14014.0] amp1111=1024.65 rms1111=722.23 mV
+[V003] step 40 f_nom=6.50 f_fit=6.500121 d=+0.000121 run=[14005.0,14264.0] amp1111=1008.16 rms1111=710.19 mV
+[V003] step 41 f_nom=6.60 f_fit=6.600120 d=+0.000120 run=[14255.0,14514.0] amp1111=994.82 rms1111=700.40 mV
+[V003] step 42 f_nom=6.70 f_fit=6.700122 d=+0.000122 run=[14505.0,14764.0] amp1111=983.10 rms1111=691.91 mV
+[V003] step 43 f_nom=6.80 f_fit=6.800125 d=+0.000125 run=[14755.0,15014.0] amp1111=973.95 rms1111=685.27 mV
+[V003] step 44 f_nom=6.90 f_fit=6.900123 d=+0.000123 run=[15005.0,15264.0] amp1111=966.81 rms1111=680.02 mV
+[V003] step 45 f_nom=7.00 f_fit=7.000119 d=+0.000119 run=[15255.0,15514.0] amp1111=960.72 rms1111=675.67 mV
+[V003] step 46 f_nom=7.10 f_fit=7.100116 d=+0.000116 run=[15505.0,15764.0] amp1111=959.26 rms1111=674.50 mV
+[V003] step 47 f_nom=7.20 f_fit=7.200111 d=+0.000111 run=[15755.0,16014.0] amp1111=960.78 rms1111=675.70 mV
+[V003] step 48 f_nom=7.30 f_fit=7.300124 d=+0.000124 run=[16005.0,16264.0] amp1111=974.70 rms1111=685.48 mV
+[V003] step 49 f_nom=7.40 f_fit=7.400136 d=+0.000136 run=[16255.0,16515.0] amp1111=1027.03 rms1111=722.36 mV
+[V003] step 50 f_nom=7.50 f_fit=7.500189 d=+0.000189 run=[16506.0,16764.0] amp1111=689.50 rms1111=493.03 mV
+[V003] step 51 f_nom=7.60 f_fit=7.600135 d=+0.000135 run=[16755.0,17014.0] amp1111=823.83 rms1111=580.32 mV
+[V003] step 52 f_nom=7.70 f_fit=7.700135 d=+0.000135 run=[17005.0,17264.0] amp1111=852.35 rms1111=600.31 mV
+[V003] step 53 f_nom=7.80 f_fit=7.800136 d=+0.000136 run=[17255.0,17514.0] amp1111=857.44 rms1111=604.13 mV
+[V003] step 54 f_nom=7.90 f_fit=7.900137 d=+0.000137 run=[17505.0,17764.0] amp1111=855.40 rms1111=603.15 mV
+[V003] step 55 f_nom=8.00 f_fit=8.000125 d=+0.000125 run=[17755.0,18014.0] amp1111=853.31 rms1111=601.96 mV
+[V003] step 56 f_nom=8.10 f_fit=8.100132 d=+0.000132 run=[18005.0,18264.0] amp1111=848.64 rms1111=599.02 mV
+[V003] step 57 f_nom=8.20 f_fit=8.200137 d=+0.000137 run=[18255.0,18514.0] amp1111=844.76 rms1111=596.73 mV
+[V003] step 58 f_nom=8.30 f_fit=8.300131 d=+0.000131 run=[18505.0,18764.0] amp1111=841.29 rms1111=594.59 mV
+[V003] step 59 f_nom=8.40 f_fit=8.400124 d=+0.000124 run=[18755.0,19014.0] amp1111=837.51 rms1111=592.36 mV
+[V003] step 60 f_nom=8.50 f_fit=8.500127 d=+0.000127 run=[19005.0,19264.0] amp1111=834.18 rms1111=590.36 mV
+[V003] step 61 f_nom=8.60 f_fit=8.600132 d=+0.000132 run=[19255.0,19514.0] amp1111=829.98 rms1111=587.84 mV
+[V003] step 62 f_nom=8.70 f_fit=8.700144 d=+0.000144 run=[19505.0,19764.0] amp1111=826.64 rms1111=585.77 mV
+[V003] step 63 f_nom=8.80 f_fit=8.800143 d=+0.000143 run=[19755.0,20014.0] amp1111=823.22 rms1111=583.70 mV
+[V003] step 64 f_nom=8.90 f_fit=8.900106 d=+0.000106 run=[20005.0,20265.0] amp1111=819.19 rms1111=581.30 mV
+[V003] step 65 f_nom=9.00 f_fit=9.000149 d=+0.000149 run=[20256.0,20514.0] amp1111=816.86 rms1111=579.82 mV
+[V003] step 66 f_nom=9.10 f_fit=9.100144 d=+0.000144 run=[20505.0,20764.0] amp1111=813.43 rms1111=577.77 mV
+[V003] step 67 f_nom=9.20 f_fit=9.200148 d=+0.000148 run=[20755.0,21014.0] amp1111=810.35 rms1111=575.84 mV
+[V003] step 68 f_nom=9.30 f_fit=9.300155 d=+0.000155 run=[21005.0,21264.0] amp1111=807.29 rms1111=573.91 mV
+[V003] step 69 f_nom=9.40 f_fit=9.400159 d=+0.000159 run=[21255.0,21514.0] amp1111=803.47 rms1111=571.35 mV
+[V003] step 70 f_nom=9.50 f_fit=9.500150 d=+0.000150 run=[21505.0,21760.0] amp1111=801.87 rms1111=570.34 mV
+[V003] f_fit - f_nom over 71 steps: mean=+1.034e-04 Hz, max|.|=1.886e-04 Hz
+[V003] f_fit / f_nom: mean=1.000017432 std=2.23e-06 -> one multiplicative clock scale, not an additive offset
+[V003] f_fit mod 0.1 Hz: max deviation from zero = 1.886e-04 Hz. CONFIRMED INDEPENDENTLY: the drive grid is f_k = 2.5 + 0.1k Hz, the pulser comb lands on EVERY drive line, and pulser masking is mandatory. My earlier 2.52+0.1k inference was wrong.
+[V003] recovered band 2.50-9.50 Hz, 71 steps. meta.json extracted_band_hz says [2.52, 9.52]; the true band is 2.50-9.50 Hz.

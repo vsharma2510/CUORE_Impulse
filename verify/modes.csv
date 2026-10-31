@@ -1,0 +1,32 @@
+# modes.csv -- dominant structural modes, 2.50-9.50 Hz, 52 tower-19 bolometers,
+# run RUNA, shaker at MSP-X, one axis, one run. Feasibility pilot: these are
+# estimates scoped to this run and these channels.
+# Modes are local maxima of the median |H| over the 52 bolometers, where
+# H = lockin(bolometer)/lockin(ch1111) on the SAME step, so the shaker/stinger
+# response (force peaks at 3.4 Hz) divides out. Detection: prominence >= 1.25 against
+# the mean of the two neighbouring grid points AND median coherence >= 0.50 at the peak.
+# f0: median over channels of a one-mode rational-fraction-polynomial fit (numerator
+#   order 2, denominator order 2) in a +/-0.45 Hz band, keeping only fits with
+#   relative residual < 0.40; where too few fits qualify, a 3-point parabolic
+#   interpolation on log|H| is used instead and the method column says so.
+# f0_err: the larger of 0.05 Hz (half the 0.1 Hz step spacing; the SPEC floor, never
+#   quoted better) and the across-channel scatter of the RFP f0.
+# zeta: from the half-power width ONLY where the peak spans >= 3 of the 0.1 Hz points
+#   AND the half-power level is actually crossed on both sides. Otherwise zeta is an
+#   UPPER LIMIT, 0.1/(2 f0), and zeta_is_upper_limit is true; zeta_err is then blank.
+# pt_harmonic_flag: f0 within f0_err of a multiple of 1.4 Hz (pulse-tube line).
+# ADJACENT_TO_CH1111_SCALE_DISCONTINUITY in the method column: this mode sits next to
+#   one of the two ch1111 scale jumps (5.4->5.5, 7.4->7.5 Hz). Its prominence may be
+#   partly instrumental. See VERIFIER_LOG.md V020.
+f0_hz,f0_err_hz,zeta,zeta_err,zeta_is_upper_limit,n_channels_showing,channels,method,pt_harmonic_flag
+3.0127,0.0500,0.01660,,true,34,937;938;939;940;941;943;944;946;948;949;951;953;954;955;956;957;958;959;960;961;962;964;965;966;967;971;974;975;976;978;979;983;987;988,upper_limit_peak_unresolved_span1pts|f0_log_parabolic(rfp_ill_conditioned_n0),false
+3.4075,0.0500,0.01467,,true,52,937;938;939;940;941;942;943;944;945;946;947;948;949;950;951;952;953;954;955;956;957;958;959;960;961;962;963;964;965;966;967;968;969;970;971;972;973;974;975;976;977;978;979;980;981;982;983;984;985;986;987;988,upper_limit_peak_unresolved_span1pts|f0_rfp_median_n5,false
+3.9707,0.0500,0.01259,,true,48,937;938;939;940;941;942;943;944;945;946;947;948;949;950;951;952;953;954;955;956;957;958;959;960;961;962;963;964;965;966;968;969;970;971;972;973;975;976;977;978;979;980;981;982;984;985;986;988,upper_limit_peak_unresolved_span2pts|f0_log_parabolic(rfp_ill_conditioned_n1),false
+4.8990,0.0500,0.01021,,true,52,937;938;939;940;941;942;943;944;945;946;947;948;949;950;951;952;953;954;955;956;957;958;959;960;961;962;963;964;965;966;967;968;969;970;971;972;973;974;975;976;977;978;979;980;981;982;983;984;985;986;987;988,upper_limit_peak_unresolved_span1pts|f0_log_parabolic(rfp_ill_conditioned_n4),false
+5.3060,0.0500,0.00942,,true,35,937;938;939;940;941;942;943;945;947;948;949;950;951;952;953;955;957;958;959;960;963;965;966;967;968;969;970;971;972;973;974;983;986;987;988,upper_limit_peak_unresolved_span3pts|f0_log_parabolic(rfp_ill_conditioned_n0),false
+6.2184,0.0500,0.00804,,true,46,937;938;939;940;941;943;944;945;947;948;949;950;951;952;953;954;955;956;957;958;959;960;961;962;963;964;965;966;967;968;969;970;971;972;973;974;975;976;980;982;983;984;985;986;987;988,upper_limit_peak_unresolved_span1pts|f0_rfp_median_n29,false
+7.4269,0.0500,0.00673,,true,49,937;938;939;940;941;942;943;944;945;946;947;948;949;950;951;952;953;954;955;956;957;958;959;960;961;962;963;964;965;966;968;969;970;971;972;973;975;976;978;979;980;981;982;983;984;985;986;987;988,upper_limit_peak_unresolved_span1pts|f0_log_parabolic(rfp_ill_conditioned_n0)|ADJACENT_TO_CH1111_SCALE_DISCONTINUITY,false
+7.9209,0.0500,0.00631,,true,36,937;938;939;940;941;942;943;944;945;947;948;949;953;954;955;956;957;958;959;960;961;962;964;965;970;971;972;973;975;976;978;979;980;981;982;988,upper_limit_peak_unresolved_span1pts|f0_log_parabolic(rfp_ill_conditioned_n1),false
+8.1274,0.0500,0.00615,,true,47,937;938;939;940;941;942;943;944;945;946;947;949;950;951;952;953;954;955;956;957;958;959;961;962;963;964;965;966;967;969;970;971;972;973;974;975;977;978;979;980;982;983;984;985;986;987;988,upper_limit_peak_unresolved_span1pts|f0_log_parabolic(rfp_ill_conditioned_n3),false
+8.5297,0.0500,0.00586,,true,46,938;939;940;941;942;943;945;946;947;948;949;950;951;952;953;954;955;956;957;958;959;960;961;963;964;966;967;968;969;970;971;972;973;974;975;976;977;979;980;981;982;983;984;985;987;988,upper_limit_peak_unresolved_span2pts|f0_log_parabolic(rfp_ill_conditioned_n1),false
+8.7834,0.0500,0.00569,,true,48,937;938;939;940;941;942;943;944;945;946;947;948;949;950;952;953;954;955;956;957;958;959;961;962;963;965;966;967;968;969;970;971;972;973;974;975;976;977;978;979;980;981;982;983;984;985;986;988,upper_limit_peak_unresolved_span1pts|f0_log_parabolic(rfp_ill_conditioned_n4),false
